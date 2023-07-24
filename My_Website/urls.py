@@ -19,5 +19,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/', include('My_blog.urls')), #this will tell the website which urls will send to blog page
+    path('', include('My_blog.urls')), #changed 'blog/' to '' to make blog page as the  home page
 ]
